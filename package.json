@@ -1,0 +1,35 @@
+{
+  "name": "hj-introduction-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "json-server": "^0.12.1",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start:client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier --semi=false --single-quote --bracket-spacing=false --write 'src/**/*.js'",
+    "precommit": "lint-staged",
+    "start": "npm-run-all -p start:*",
+    "start:server": "json-server -p 7000 src/mocks/cars.json"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --bracket-spacing=false",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.10.2"
+  }
+}
