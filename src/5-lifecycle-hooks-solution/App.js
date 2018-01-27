@@ -11,7 +11,7 @@ const Car = ({img, manufacturer, model, price}) => (
 
 export class App extends React.Component {
   state = {
-    loading: true,
+    loading: false,
     cars: null
   }
 

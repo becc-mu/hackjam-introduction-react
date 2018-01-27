@@ -2,7 +2,7 @@ import React from 'react'
 
 export class App extends React.Component {
   state = {
-    loading: true,
+    loading: false,
     cars: null
   }
   /** This lifecycle should not be used, it is deprecated */
