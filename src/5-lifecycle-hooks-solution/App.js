@@ -12,7 +12,7 @@ const Car = ({img, manufacturer, model, price}) => (
 export class App extends React.Component {
   state = {
     loading: false,
-    cars: null
+    cars: []
   }
 
   /** This is react telling you the component has been mounted in the dom and is ready to be used. */
