@@ -2,8 +2,8 @@ import React from 'react'
 
 export class App extends React.Component {
   state = {
-    loading: true,
-    cars: null
+    loading: false,
+    cars: []
   }
   /** This lifecycle should not be used, it is deprecated */
   componentWillMount() {}
