@@ -1,17 +1,18 @@
-import React from 'react'
-import users from '../mocks/users'
+import React from 'react';
+import users from '../mocks/users';
 
 // TODO 1:
-// Create a User component and refactor the App component below
+// Extract the <User /> component from the <App /> component
+// hint: it starts at <p>
 
 // TODO 2:
-// Map over the first 50 users and return a list of them
+// In the App component map over the first 50 users and return a list <User />
 
 // TODO 3:
-// Use propTypes to validate the props of the User component
+// Make sure your console is free of error/warnings
 
 // TODO 4:
-// Make sure your console is free of error/warnings
+// Use propTypes to validate the props of the User component
 export class App extends React.Component {
   render() {
     return (
@@ -42,6 +43,6 @@ export class App extends React.Component {
           </li>
         </ul>
       </div>
-    )
+    );
   }
 }
